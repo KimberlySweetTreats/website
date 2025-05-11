@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+	
+	
+	
+	
+	
+     
+      
+	
+
+	body{
+		background-color:#EFE1C2;
+		margin:0;
+		padding:0;
+		font-family:Arial, san-serif;
+	
+	}
+.div1 {
+display:flex;
+align-items:center ;
+gap:10px ;
+}
+.div1 img{
+width: 400px;
+}
+
+	.logo-slogan{
+	display:flex;
+	align-items:center;
+	gap:30%
+	}
+		.logo-img {
+	height:130px;
+	width:auto;
+	margin-right: 10px;
+	}
+	
+	.slogan{
+	font-family: san-serif;
+	font-size:26px;
+	color:#000;
+
+	} 
+
+
+<br>
+<br>
+   *{
+   margin:0;
+   padding:0;
+  box-sizing:border-box;
+   
+   }
+          
+ 
+    /* Responsive adjustments */
+    @media (max-width: 2000px) {
+      .header {
+        padding: 10px 3%;
+		Position:relative;
+      }
+	  .logo-img {
+	  max-width:100%;
+	  }
+	 .hamburger-menu{
+	 margin-left:auto;
+	 padding:100px;
+	 }
+}
+
+
+   
+   
+   
+   
+   
+   
+   
+       navbar{
+	   display:flex;
+	   justify-content:space-between;
+	   align-items:center;
+	   padding:20px;
+	   background-color:#333;
+	   width:100%;
+
+	 
+
+	   }
+
+        /* Hamburger Icon Styles */
+        .hamburger-menu {
+	
+            display: none; /* Hidden on desktop by default */
+            cursor: pointer;
+            padding: 8px;
+           background: none;
+            border: none;
+			margin-left: auto;
+			Position:fixed;
+					
+        }
+
+
+        .bar {
+            width: 25px;
+            height: 5px;
+            background-color: #333;
+            margin: 5px 0;
+            transition: 0.4s; /* Smooth animation */
+        }
+
+        /* Transform hamburger into X */
+        .hamburger-menu.active .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger-menu.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-menu.active .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        /* Navigation Links */
+        nav {
+            display: flex;
+            gap: 20px;
+		
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #111;
+            padding: 5px 0;
+            font-size: 1.1rem;
+			transition:color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0066cc;
+        }
+        /* Mobile Styles (Show Hamburger) */
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: block; /* Show hamburger icon */
+                position: relative;
+				 align-items: flex-end;
+				 margin-left:auto;
+                z-index: 100;
+				order:1;
+            }
+			}
+
+            nav {
+                display: none; /* Hide nav links by default */
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width:20%;
+                height: 150px;
+                background-color:white;
+                padding: 80px 20px 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 20px;
+				box-shadow:-2px 0 20px rgba(0,0,0,0.1);
+				  Position:fixed ;
+	            right:0;
+				
+	             z-index:1000;
+	 
+            }
+
+            nav.active {
+			    right:0;
+                display: flex; /* Show when hamburger is clicked */
+            }
+        
+		
+		
+
+			    /* Reset default margins */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Full-width header container */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; 
+      width: 100%;
+	  height:100%;
+      border-bottom: 2px solid #2c3e50;
+      padding:15px 5%;
+      background-color: #f8f9fa;
+      box-sizing: border-box; /* Ensures padding is included in width */
+      position: relative;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+      
+	
+
+
+
+<br>
+<br>
+<br>
+	<br>
+
+        body {
+            font-family: Arial, sans-serif;
+		
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #search-box {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+			border-radius:25px;
+			outline:none;
+
+			}
+
+        .product {
+            border: 2px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product-name {
+            font-weight: bold;
+            color: #d35400;
+        }
+        .no-results {
+            color: #777;
+            font-style: italic;
+        }
+
+<br>
+<br>
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <header class="header">
+
+
+<div class="top-bar">
+<div class="logo-slogan">
+<img src="logo.png" width="130" height="130" alt="logo" class="logo-img"> 
+<span class="slogan" > <i>LOVE AT FIRST BITE </i></span>
+
+
+
+
+    <button class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </button>
+
+    <nav>
+        <a href="website.html">Home</a>
+        <a href="unit1.html">About</a>
+        <a href="unit2.html">Services</a>
+        <a href="unit3.html">Contact</a>
+    </nav>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+
+            // Prevent scrolling when menu is open
+            if (nav.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when clicking on links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+
+   
+  
+
+</div>
+
+</div>
+</header>
+<br>
+
+    <input type="text" id="search-box" placeholder="Search here..." autofocus>
+    <div id="results"></div>
+
+    <script>
+        // Cookie products data
+        const cookies = [
+            { name: "Chocolate Chip", desc: "Classic cookie with melty chocolate chips", price: "R10" },
+            { name: "layered carrot cake", desc: "Hearty oatmeal with plump raisins", price: "R45" },
+            { name: "coffee cake", desc: "Sweet and simple with colorful sprinkles", price: "R40" },
+            { name: "cherry blossom cake[gluten free]", desc: "Rich and nutty with crisscross pattern", price: "R250" },
+            { name: "chocolate muffins", desc: "Chocolate cookie with chocolate chunks", price: "R25" },
+		    { name: "regular muffins", desc: "Chocolate cookie with chocolate chunks", price: "R25" },
+		    { name: "dessert cakes", desc: "Chocolate cookie with chocolate chunks", price: "R25"},
+			{ name: "strawberry Danish", desc: "Chocolate cookie with chocolate chunks", price: "R20" },
+			 { name: "puffed pastries", desc: "Chocolate cookie with chocolate chunks", price: "R15" },
+		    { name: "fruit pies", desc: "Chocolate cookie with chocolate chunks", price: "R30" },
+	        { name: "doughnuts", desc: "Chocolate cookie with chocolate chunks", price: "R25" }	,	
+        ];
+
+        const searchBox = document.getElementById('search-box');
+        const resultsDiv = document.getElementById('results');
+
+        // Search as you type
+        searchBox.addEventListener('input', searchCookies);
+
+        function searchCookies() {
+            const searchTerm = searchBox.value.toLowerCase();
+            let resultsHTML = '';
+
+            if (searchTerm === '') {
+                resultsDiv.innerHTML = '';
+                return;
+            }
+
+            const foundCookies = cookies.filter(cookie =>
+                cookie.name.toLowerCase().includes(searchTerm) ||
+                cookie.desc.toLowerCase().includes(searchTerm)
+            );
+
+            if (foundCookies.length > 0) {
+                foundCookies.forEach(cookie => {
+                    resultsHTML += `
+                        <div class="product">
+                            <div class="product-name">${cookie.name}</div>
+                            <div>${cookie.desc}</div>
+                            <div>${cookie.price}</div>
+                        </div>
+                    `;
+                });
+            } else {
+                resultsHTML = '<div class="no-results">No cookies found. Try another search.</div>';
+            }
+
+            resultsDiv.innerHTML = resultsHTML;
+        }
+    </script>
+	
+
+	
+	
+	<h1> kimberly sweet treats</h1>
+	<p> welcome to our cozy bakery , where the aroma of freshly baked goods fills the air and warmth is drawn from
+	every corner .Kimberly sweet treats is passionate about creating sweet treats that bring people together ,with love ,
+	care and a dash of creativity .We make everyday a little sweeter  </p>
+
+<div class="div1">
+
+<img src="file.png" class ="img1">
+<p class="p1"> Our bakery is more than just a business , it's a labour of love . 
+We are a family owned and operated bakery that has been serving our community for years .Our story began with a simple passion 
+for baking and a dream to share that passion with our community</p>
+
+
+
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
